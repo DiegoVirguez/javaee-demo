@@ -5,7 +5,7 @@ import javax.ejb.Stateless;
 import javax.persistence.*;
 import com.diego.domain.Persona;
 
-@Stateless
+@Stateless // debe ser ejb para que se puede agregar el persistenceUnit
 public class PersonaDaoImpl implements PersonaDao{
 
     @PersistenceContext(unitName="PersonaPU")
